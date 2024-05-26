@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Besant Registration</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <img src="./assets/logo.jpeg" alt="Besant Logo" class="logoimg"> 
+        <div class="logoText">Besant Technologies</div>
+        <div class="heading">
+            <h3>Step 2 - Course Details</h3>
+        </div>
+        <div class="progress">
+                <div class="steps">
+                  <span class="circle active">1</span>
+                  <span class="circle active">2</span>
+                  <span class="circle">3</span>
+                  <span class="circle">4</span>
+                    <div class="progress-bar">
+                    <span class="indicator"></span>
+                    </div>
+                    </div>
+        </div>
+
+        <form action="./payment.html" autocomplete="off" target="_self">
+            <div class="field">
+                <label for="location">Preferred Location:</label>
+                <select id="location" name="location">
+                    <option value="select">Select City</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+            </div> 
+            
+            <div class="gender">
+                <p>Class type:</p>
+                <label>
+                <input type="radio" name="gender" value="online"> Online
+                </label>
+                <label>
+                <input type="radio" name="gender" value="offline"> Offline
+                </label>
+                <label>
+                <input type="radio" name="gender" value="hybrid"> Hybrid
+                </label>                
+            </div>
+            <div class="gender">
+                <p>Class Days:</p>
+                <label>
+                <input type="radio" name="gender" value="Weekdays"> Weekdays
+                </label>
+                <label>
+                <input type="radio" name="gender" value="Weekends"> Weekends
+                </label>           
+            </div>
+            <div class="gender">
+                <p>Class Time:</p>
+                <label>
+                <input type="radio" name="gender" value="Morning"> Morning
+                </label>
+                <label>
+                <input type="radio" name="gender" value="Evening"> Evening
+                </label>           
+            </div>
+            <div class="field">
+                <label for="doj">Preferred Join Date:</label>
+                <input type="date" name="doj" id="doj" required style="background-color: whitesmoke; color: black; display: flex; justify-content: first baseline;"> 
+            </div>
+            <h3>Select the courses you're interested in:</h3>
+            <div class="checks">
+                <label><input type="checkbox" name="option" value="HTML">HTML</label><br>
+                <label><input type="checkbox" name="option" value="CSS">CSS</label><br>
+                <label><input type="checkbox" name="option" value="Javascript">Javascript</label><br>
+                <label><input type="checkbox" name="option" value="Database Management">Database Management</label><br>
+                <label><input type="checkbox" name="option" value="Database Management">Springboot</label><br>
+                <label><input type="checkbox" name="option" value="Database Management">Backend</label><br>
+            </div>
+
+            <div class="field">
+                <button type="submit">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

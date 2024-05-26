@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    color: whitesmoke;
+    
+}
+
+body{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: #2986cc;
+    background-image: url(./background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.heading{
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+.mainContainer{
+    width: 750px;    
+    max-height: fit-content;
+    background: #2986cc;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: -3px -3px 7px #ffffff73,
+                2px 2px 5px #344955;
+    
+}
+
+.mainContainer .logoimg {
+    width: 90px;
+    height: 90px;
+    margin-top: -100px;
+    border-radius: 50px;
+    box-shadow: 
+    0px 0px 2px #5f5f5f,
+    0px 0px 0px 5px #ecf0f3,
+    8px 8px 15px #a7aaaf,
+    -8px -8px 15px #ffffff;
+}
+
+.logoText{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    color: #000;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #F1FADA;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    max-height: fit-content;
+    z-index: 1;
+}
+
+.field{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    z-index: 1;
+}
+
+.field label{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    z-index: 1;
+}
+
+.field input{
+    height: 100%;
+    width: 75%;
+    padding-left: 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #C7C8CC;
+    background: #2986cc;
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 19px #344955,
+                inset -5px -5px 10px #ffffff73;
+                z-index: 1;
+}
+
+.field input::placeholder{
+    color: #C7C8CC;
+    font-family: "Mukta", sans-serif;
+    z-index: 1;
+}
+
+#dob{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.gender{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    z-index: 1;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
+
+}
+.progress .steps {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.steps .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  color: #999;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid #e0e0e0;
+  z-index: 1;
+}
+.steps .circle.active {
+  border-color: #0C359E;
+  color: #0C359E;
+}
+.steps .progress-bar {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #e0e0e0;
+  z-index: 0;
+}
+.progress-bar .indicator {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: #0C359E;
+}
+
+button{
+    margin: 25px 0 0 0;
+    width: 100%;
+    height: 50px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    background: #2986cc;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #344955,
+                -5px -5px 10px #ffffff73;
+  }
+  button:focus{
+    color: #3498db;
+    box-shadow: inset 2px 2px 5px #344955,
+                inset -5px -5px 10px #ffffff73;
+  }
+
+select{
+  width: 500px;
+  font-family: "Josefin Sans", sans-serif;
+  height: 35px;
+  border-radius: 10px;
+}
+
+select>option{
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+form>h3{
+    font-family: "Josefin Sans", sans-serif;
+    padding: 70px 0px 20px 0px;
+}
+
+.checks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+.checks>label{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.checks>input{
+    transform: scale(1.5);
+}
+
+.paymentSelect>input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paymentlogo{
+  height: 75px;
+}
+
+.finalText{
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 50px;
+}
