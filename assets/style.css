@@ -254,3 +254,11 @@ form>h3{
   gap: 50px;
   padding-bottom: 50px;
 }
+
+#fileUpload{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
